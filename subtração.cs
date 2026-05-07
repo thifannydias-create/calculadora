@@ -1,10 +1,17 @@
-1 referencia 
-class Program
-{ 
-    0 referencias 
-    static void Main()
-    }
-int resultado = numero1 - numero2;
+using System;
 
+class Program
 {
-Console.Write("a subtraÁao Ë: + resultado");
+    static void Main(string[] args)
+    {
+        Console.Write("Digite o primeiro n√∫mero: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite o segundo n√∫mero: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        int soma = num1 + num2;
+
+        Console.WriteLine("A soma √©: " + soma);
+    }
+}
