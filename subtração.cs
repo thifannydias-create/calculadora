@@ -10,8 +10,9 @@ class Program
         Console.Write("Digite o segundo número: ");
         int num2 = Convert.ToInt32(Console.ReadLine());
 
-        int soma = num1 + num2;
+        int subtracao = num1 - num2;
 
-        Console.WriteLine("A soma é: " + soma);
+        Console.WriteLine("A subtração é: " + subtracao);
     }
+}
 }
