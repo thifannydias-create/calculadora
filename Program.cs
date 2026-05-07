@@ -1,17 +1,17 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+using System;
 
-// Ativa arquivos HTML
-app.UseDefaultFiles();
-app.UseStaticFiles();
-
-// Rota simples (API)
-app.MapGet("/api/ola", (string nome) =>
-
+class Program
 {
-    return $"Ol�, {nome}! Bem-vindo ao C# "
-    ;
+    static void Main(string[] args)
+    {
+        Console.Write("Digite o primeiro número: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
 
-});
+        Console.Write("Digite o segundo número: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
 
-app.Run();
+        int soma = num1 + num2;
+
+        Console.WriteLine("A soma é: " + soma);
+    }
+}
